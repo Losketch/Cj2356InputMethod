@@ -100,6 +100,16 @@ print(f'处理完成，结果保存在 {output_file_path} 文件中。')
 
 此代码需要修改成你解压源代码的目录！！！
 
-```javac.exe -encoding UTF-8 -cp .;C:\你的目录\myweb-develop\myweb\src\java;C:\你的目录\myweb-develop\myweb\src\java\cangjie;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java\util Cj00AllInOneTest.java```
-
+``` javac
+javac.exe -encoding UTF-8 -cp .;C:\你的目录\myweb-develop\myweb\src\java;C:\你的目录\myweb-develop\myweb\src\java\cangjie;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java\util Cj00AllInOneTest.java
+```
+```
+javac.exe -encoding UTF-8 -cp .;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java\util\IOUtils.java;C:\你的目录\myweb-develop\myweb\src\java -Xlint:unchecked Cj01SQLiteTest.java
+```
+```
+cd C:\你的目录\myweb-develop\myweb
+```
+```
+java.exe -cp .;C:\你的目录\myweb-develop\myweb\src\J2EE\APP-INF\lib\sqlite-jdbc-3.15.1.jar;C:\你的目录\myweb-develop\myweb\src\java cangjie.java.Cj01SQLiteTest
+```
 
