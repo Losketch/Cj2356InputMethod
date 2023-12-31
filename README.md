@@ -114,5 +114,6 @@ java.exe -cp .;C:\你的目录\myweb-develop\myweb\src\J2EE\APP-INF\lib\sqlite-j
 等待运行完毕就到最后一步
 
 ## 最后
+在 `myweb-develop\myweb\src\java\cangjie\mb\mbdb\` 目录下你会看到一个 `cjmbdb.db` 文件
 
-
+把它替换掉 `.apk/assets/database/cjmbdb.db` 的文件并签一下名就能安装运行了
