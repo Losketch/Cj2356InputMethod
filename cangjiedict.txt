@@ -1,0 +1,2 @@
+这个cangjiedict.txt并非是真正的 仓颉五代码表究极整合包 文件，真正文件请到
+https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Cj5Cons 处下载
