@@ -1,0 +1,14 @@
+"D:\Program Files\Java\jdk-11\bin\javac.exe" -encoding UTF-8 -cp .;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie\java;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie\java\util Cj00AllInOneTest.java
+"D:\Program Files\Java\jdk-11\bin\javac.exe" -encoding UTF-8 -cp .;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie\java\util\IOUtils.java;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java -Xlint:unchecked Cj01SQLiteTest.java
+cd C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb
+"D:\Program Files\Java\jdk-11\bin\java.exe" -cp .;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\J2EE\APP-INF\lib\sqlite-jdbc-3.15.1.jar;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java cangjie.java.Cj01SQLiteTest
+
+"D:\Program Files\Java\jdk-11\bin\java.exe" -cp .;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\J2EE\APP-INF\lib\sqlite-jdbc-3.15.1.jar;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\J2EE\APP-INF\lib\json.jar;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\J2EE\APP-INF\lib\mail.jar;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\J2EE\APP-INF\lib\zxing-1.7-javase.jar;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\J2EE\APP-INF\lib\zxing-2.0-core.jar;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java cangjie.java.Cj01SQLiteTest
+
+
+"D:\Program Files\Java\jdk-11\bin\javac.exe" -encoding UTF-8 -cp .;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie\java;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie\java\util 
+"D:\Program Files\Java\jdk-11\bin\javac.exe" -encoding UTF-8 -cp .;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie\java\util\IOUtils.java;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java -Xlint:unchecked 
+
+dir /B *.java > sources.txt
+"D:\Program Files\Java\jdk-11\bin\javac.exe" -encoding UTF-8 -cp .;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie\java;C:\Users\76227\Downloads\myweb-develop\myweb-develop\myweb\src\java\cangjie\java\util @sources.txt
+del "sources.txt"
