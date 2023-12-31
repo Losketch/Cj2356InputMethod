@@ -2,7 +2,7 @@
 # Cj2356InputMethod
 
  此版本是 [原版](https://githubfast.com/fszhouzzOrgOne/CangJieIM2356) 的寿命延长版
-
+ 
 其中`.apk/`中的`classes.dex` `resources.arsc` `res/%all.xml` 均已简体中文化
 
 `.apk/`的`assets/version/log.txt` 也简体中文化
@@ -14,7 +14,6 @@
 使用`cangjie.java.Cj01SQLiteTest`项目可以自定义输入方案，本项目默认使用的是 [Fitzgerald-Porthmouth-Koenigsegg](https://githubfast.com/Fitzgerald-Porthmouth-Koenigsegg) 的 [仓颉五代码表究极整合包](https://githubfast.com/Fitzgerald-Porthmouth-Koenigsegg/Cj5Cons) 
 
 当然，你可以自定义其他的输入方案，~~换成五笔也不是不行~~（
-
 # 自定义输入方案
 ## 首先
 你的自定义输入方案要符合 **码点在开头 中间四个空格 后面一个或多个字** 列如：
@@ -112,4 +111,8 @@ cd C:\你的目录\myweb-develop\myweb
 ```
 java.exe -cp .;C:\你的目录\myweb-develop\myweb\src\J2EE\APP-INF\lib\sqlite-jdbc-3.15.1.jar;C:\你的目录\myweb-develop\myweb\src\java cangjie.java.Cj01SQLiteTest
 ```
+等待运行完毕就到最后一步
+
+## 最后
+
 
