@@ -16,7 +16,7 @@
 当然，你可以自定义其他的输入方案，~~换成五笔也不是不行~~（
 
 # 自定义输入方案
-### 首先
+## 首先
 你的自定义输入方案要符合 **码点在开头 中间四个空格 后面一个或多个字** 列如：
 ```
 a    日
@@ -66,7 +66,40 @@ with open(input_file_path, 'r', encoding='utf-8') as input_file:
 print(f'处理完成，结果保存在 {output_file_path} 文件中。')
 
 ```
-### 然后
+## 然后
 
+先把jdk在你的电脑上配置好，配置好在cmd或终端中输入javac并回车提示：
+``` java
+>javac
+用法: javac <options> <source files>
+其中, 可能的选项包括:
+  @<filename>                  从文件读取选项和文件名
+  -Akey[=value]                传递给注释处理程序的选项
+  --add-modules <模块>(,<模块>)*
+        除了初始模块之外要解析的根模块; 如果 <module>
+                为 ALL-MODULE-PATH, 则为模块路径中的所有模块。
+  ...
+  -verbose                     输出有关编译器正在执行的操作的消息
+  --version, -version          版本信息
+  -Werror                      出现警告时终止编译
+>
+```
+就成功了
+
+把生成完的文件放到你下载的源代码压缩包解压后的 `myweb-develop/myweb/src/java/cangjie/mb/cjmb/` 文件夹中
+
+并删除 `cj5-Jackchows-Cangjie5.txt` 文件，然后把它重命名为 `cj5-Jackchows-Cangjie5.txt` 
+
+到 `myweb-develop/myweb/src/java/cangjie/java/` 目录下就行下一步
+
+## 接着
+
+你要修改 `Cj01SQLiteTest.java` 文件以达到你想要的结果，只要修改 `true` 和 `false` 的字样就行，其他代码不要动
+
+修改完 `Cj01SQLiteTest.java` 文件运行以下代码：
+
+此代码需要修改成你解压源代码的目录！！！
+
+```javac.exe -encoding UTF-8 -cp .;C:\你的目录\myweb-develop\myweb\src\java;C:\你的目录\myweb-develop\myweb\src\java\cangjie;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java\util Cj00AllInOneTest.java```
 
 
