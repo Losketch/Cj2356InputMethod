@@ -136,10 +136,10 @@ public class Cj01SQLiteTest {
 
     public static void main(String args[]) throws Exception {
         // 互斥的版本選擇
-        boolean editionAll = false; // 版本自定義字體 514145
+        boolean editionAll = true; // 版本自定義字體 514145
         boolean edition3 = false; // 版本倉頡三 164682
         boolean edition35 = false; // 版本倉頡三五 185549
-        boolean edition5 = true; // 版本五代 178742
+        boolean edition5 = false; // 版本五代 178742
         boolean editionSpecial5 = false; // 特别五代，粵語不要，換吳語 188760
         boolean edition6 = false; // 版本六 275759
         boolean edition62 = false; // 版本六，帶詞組
@@ -527,7 +527,7 @@ public class Cj01SQLiteTest {
             }
             // 上海吳語（老派）
             if (withWugniuLopha) {
-                insertMbdb(stmt, cjGenWugniuLopha, linesWugniuLopha, false);
+                insertMbdb(stmt, cjGenWugniuLopha, linesWugniuLopha, true);
                 c.commit();
                 System.out.println(
                         "insert " + cjGenWugniuLopha + " successfully");
@@ -535,7 +535,7 @@ public class Cj01SQLiteTest {
             }
             // 甌越瑞安吳語
             if (withWugniuRuiAn) {
-                insertMbdb(stmt, cjGenWugniuRuiAn, linesWugniuRuiAn, false);
+                insertMbdb(stmt, cjGenWugniuRuiAn, linesWugniuRuiAn, true);
                 c.commit();
                 System.out.println(
                         "insert " + cjGenWugniuRuiAn + " successfully");
@@ -543,7 +543,7 @@ public class Cj01SQLiteTest {
             }
             // 曾版湘潭話
             if (withSionTanTseng) {
-                insertMbdb(stmt, cjGenSionTanTseng, linesSionTanTseng, false);
+                insertMbdb(stmt, cjGenSionTanTseng, linesSionTanTseng, true);
                 c.commit();
                 System.out.println(
                         "insert " + cjGenSionTanTseng + " successfully");
@@ -551,14 +551,14 @@ public class Cj01SQLiteTest {
             }
             // 中古漢語
             if (withKoxhanh) {
-                insertMbdb(stmt, cjGenKoxhanh, linesKoxhanh, false);
+                insertMbdb(stmt, cjGenKoxhanh, linesKoxhanh, true);
                 c.commit();
                 System.out.println("insert " + cjGenKoxhanh + " successfully");
                 selectCountAll(stmt);
             }
             // 國際音標
             if (withIpa) {
-                insertMbdb(stmt, cjGenIpa, linesipa, false);
+                insertMbdb(stmt, cjGenIpa, linesipa, true);
                 c.commit();
                 System.out.println("insert " + cjGenIpa + " successfully");
                 selectCountAll(stmt);
@@ -593,7 +593,7 @@ public class Cj01SQLiteTest {
             }
             // 注音符號
             if (withZy) {
-                insertMbdb(stmt, cjGenzy, lineszy, false);
+                insertMbdb(stmt, cjGenzy, lineszy, true);
                 c.commit();
                 System.out.println("insert " + cjGenzy + " successfully");
                 selectCountAll(stmt);
