@@ -1,0 +1,2 @@
+此目录的 新世纪版五笔字型 Unicode CJK 超大字符集编码数据库 文件请到
+https://github.com/CNMan/UnicodeCJK-WuBi06 处下载并解压
