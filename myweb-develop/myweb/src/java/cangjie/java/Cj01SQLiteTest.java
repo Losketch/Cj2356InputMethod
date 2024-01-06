@@ -127,7 +127,7 @@ public class Cj01SQLiteTest {
 
     private static boolean withCangjie6 = false; // 加入蒼頡六
     private static boolean withCangjie5 = true; // 加入蒼頡五
-    private static boolean withCangjiemacx = false; // 加入倉頡MacX10.5
+    private static boolean withCangjiemacx = true; // 加入倉頡MacX10.5
     private static boolean withCangjie3 = false; // 加入倉頡三
     private static boolean withCangjieyh = false; // 加入倉頡雅虎
     private static boolean withCangjiems = false; // 加入倉頡微軟
@@ -175,7 +175,7 @@ public class Cj01SQLiteTest {
         if (editionAll) {
             withCangjie6 = false;
             withCangjie5 = true;
-            withCangjiemacx = false; // 加入倉頡MacX10.5
+            withCangjiemacx = true; // 加入倉頡MacX10.5
             withCangjie3 = false;
             withCangjieyh = false; // 加入倉頡雅虎
             withCangjiems = false; // 加入倉頡微軟
@@ -412,7 +412,7 @@ public class Cj01SQLiteTest {
             stmt.executeUpdate(sql_gen);
             sql_gen = getInsertGenSql(cjGencjms, "微软仓颉");
             stmt.executeUpdate(sql_gen);
-            sql_gen = getInsertGenSql(cjGencjmacx, "MacX10.5");
+            sql_gen = getInsertGenSql(cjGencjmacx, "新世纪五笔");
             stmt.executeUpdate(sql_gen);
 
             sql_gen = getInsertGenSql(cjGenkorea, "朝鲜谚文");
