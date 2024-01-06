@@ -13,9 +13,9 @@
 ### 注意 由于一个字体文件`65535`个字的上线，字体无法支持显示扩展G、H区的字，如果系统本身显示不了那打出“□”、“〿”、“�”、“　”等属于正常现象
 `.apk/`的`assets/database/cjmbdb.db` 是使用本项目下的 myweb 项目的`cangjie.java.Cj01SQLiteTest`生成
 
-使用`cangjie.java.Cj01SQLiteTest`项目可以自定义输入方案，本项目默认使用的是 [Fitzgerald-Porthmouth-Koenigsegg](https://github.com/Fitzgerald-Porthmouth-Koenigsegg) 的 [仓颉五代码表究极整合包](https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Cj5Cons) 
+使用`cangjie.java.Cj01SQLiteTest`项目可以自定义输入方案，本项目默认使用的是 [Fitzgerald-Porthmouth-Koenigsegg](https://github.com/Fitzgerald-Porthmouth-Koenigsegg) 的 [仓颉五代码表究极整合包](https://github.com/Fitzgerald-Porthmouth-Koenigsegg/Cj5Cons) 和 [新世纪版五笔字型超大字符集编码数据库](https://github.com/CNMan/UnicodeCJK-WuBi06)
 
-当然，你可以自定义其他的输入方案，~~换成五笔也不是不行~~（
+当然，你可以自定义其他的输入方案，~~换成五笔也不是不行~~ ~~（结果成真的了~~ （（（
 # 自定义输入方案
 ## 首先
 你的自定义输入方案要符合 **码点在开头 中间四个空格 后面一个或多个字** 列如：
@@ -101,16 +101,16 @@ print(f'处理完成，结果保存在 {output_file_path} 文件中。')
 
 此代码需要修改成你解压源代码的目录！！！
 
-``` javac
+``` cmd
 javac.exe -encoding UTF-8 -cp .;C:\你的目录\myweb-develop\myweb\src\java;C:\你的目录\myweb-develop\myweb\src\java\cangjie;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java\util Cj00AllInOneTest.java
 ```
-```
+``` cmd
 javac.exe -encoding UTF-8 -cp .;C:\你的目录\myweb-develop\myweb\src\java\cangjie\java\util\IOUtils.java;C:\你的目录\myweb-develop\myweb\src\java -Xlint:unchecked Cj01SQLiteTest.java
 ```
-```
+``` cmd
 cd C:\你的目录\myweb-develop\myweb
 ```
-```
+``` cmd
 java.exe -cp .;C:\你的目录\myweb-develop\myweb\src\J2EE\APP-INF\lib\sqlite-jdbc-3.15.1.jar;C:\你的目录\myweb-develop\myweb\src\java cangjie.java.Cj01SQLiteTest
 ```
 等待运行完毕就到最后一步
